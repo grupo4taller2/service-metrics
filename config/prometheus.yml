@@ -27,10 +27,11 @@ scrape_configs:
   - job_name: 'service-trips'
 
     # Override the global default and scrape targets from this job every 5 seconds.
-    scrape_interval: 10s
+    scrape_interval: 5s
 
     # metrics_path defaults to '/metrics'
     metrics_path: '/api/v1/metrics' 
     # scheme defaults to 'http'.
     static_configs:
         - targets: ['SERVICE_TRIPS_REMOTE_URL']
+    scheme: https
