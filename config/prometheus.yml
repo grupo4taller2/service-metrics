@@ -32,4 +32,4 @@ scrape_configs:
     metrics_path: '/api/v1/metrics' 
     # scheme defaults to 'http'.
     static_configs:
-        - targets: [SERVICE_TRIPS_REMOTE_URL]
+        - targets: ['SERVICE_TRIPS_REMOTE_URL']
